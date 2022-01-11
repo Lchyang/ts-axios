@@ -1,5 +1,4 @@
-export type Method =
-  | 'get'
+export type Method = 'get'
   | 'GET'
   | 'post'
   | 'POST'
