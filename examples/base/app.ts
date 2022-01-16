@@ -65,8 +65,19 @@ import axios from "../../src";
 axios({
   method: 'post',
   url: '/base/post',
-  data: null,
-  // headers: {
-  //   'content-type': 'hello'
-  // }
+  data: {
+    a: 1,
+    b: 2
+  },
+}).then(res => {
+  console.log(res, 'hello world')
 })
+
+// const paramsString = 'q=URLUtils.searchParams&topic=api'
+// const searchParams = new URLSearchParams(paramsString)
+
+// axios({
+//   method: 'post',
+//   url: '/base/post',
+//   data: searchParams
+// })
